@@ -4,13 +4,14 @@ const app = express() // 2 - criei o app
 const dataConfig = require("./data/dataConfig")
 
 const usuarios = require("./routes/routesUsuarios")
-
+const cors = require("cors")
 dataConfig.connect()
 
 app.use(express.json())
 
 app.use("/videos", videos)
 
+app.use(cors())
 
 module.exports = app // 3 - aqui estou exportando o APP e suas dependencias(express) para o server.js
 
