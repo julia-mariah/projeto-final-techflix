@@ -1,9 +1,11 @@
 const express = require("express") // 1 - isso eu importei do express
 const videos = require("./routes/routesVideos") // aqui eu importei a rota do controllers 
 const app = express() // 2 - criei o app
-const dadosVideos = require("./data/dataVideos")
+const dataConfig = require("./data/dataConfig")
 
-dadosVideos.connect()
+const usuarios = require("./routes/routesUsuarios")
+
+dataConfig.connect()
 
 app.use(express.json())
 
