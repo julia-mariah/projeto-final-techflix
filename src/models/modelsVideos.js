@@ -1,6 +1,7 @@
 const mongoose = require("mongoose") // Passo 01 : aqui estamos importando o mongoose
 
-const videosSchema = new mongoose.Schema({ // passo 2 aqui criamos a engenharia do schema que no caso é uma class
+const videosSchema = new mongoose.Schema({ // passo 2 aqui criamos a engenharia do 
+    //schema que no caso é uma class
 
     titulo: {
         type: String,

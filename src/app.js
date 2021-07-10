@@ -11,6 +11,8 @@ app.use(express.json())
 
 app.use("/videos", videos)
 
+app.use("/usuarios", usuarios)
+
 app.use(cors())
 
 module.exports = app // 3 - aqui estou exportando o APP e suas dependencias(express) para o server.js
