@@ -6,9 +6,17 @@
 
 ## Descrição da API (RestFull-CRUD)
 
-Plataforma que agrega vídeos e oportunidades voltadas ao universo DEV e TI, agregadas por temas, professores, influencers.
+**Tema**
 
-Poderá ser separado por free e pago, (no caso de videos com patrocínio) e parte desse valor arrecadado vai para o instituto coligado para fomentar a inclusão e diversidade, denominado  **www.transprograma.com.br**
+Percebi ao longo de minha jornada tecnológica a falta de uma plataforma que agrega vídeos e oportunidades voltadas ao universo DEV, agregadas por temas, professores, influencers.
+
+Prestando assim uma oportunidade tanto para interessados em aprender , como para aqueles que descobrem novas práticas de codar , despertando o interesse de jovens para esta nova profissão. sendo inclusive um local aberto para as empresas conhecerem os projetos colocados no ar.
+
+Desejo ter também  um periódico que dispara emails com novas lives , oportunidades, etc
+
+Poderá ser separado por free e  pago, (no caso de lives com patrocínio) e parte desse valor arrecadado vai para o instituto coligado que vai fomentar a inclusão e diversidade, **www.transprograma.com.br**
+
+Esta aplicação é uma API onde eu posso gerenciar os itens na minha plataforma multimedia.
 
 ## Rotas
 
@@ -23,8 +31,8 @@ resposta servidor:
 ```json
 {
     "message": "Olá !! Aqui você vai encontrar muita ajuda e informação para conhecer o universo Dev e TI",
-    "version": 1.0,
-    "autor": "Julia Mariah",
+    "version": 1,
+    "autor": "Julia Mariah Elyseu",
     "site": "www.techflix.com.br",
     "date": 2021,
     "descricao": "Projeto final do curso da REPROGRAMA"
