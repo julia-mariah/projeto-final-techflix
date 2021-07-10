@@ -8,7 +8,7 @@
 
 Plataforma que agrega vídeos e oportunidades voltadas ao universo DEV e TI, agregadas por temas, professores, influencers.
 
-Poderá ser separado por free e pago, (no caso de videos com patrocínio) e parte desse valor arrecadado vai para o instituto coligado para fomentar a inclusão e diversidade, denominado  **www.transprograma.com**
+Poderá ser separado por free e pago, (no caso de videos com patrocínio) e parte desse valor arrecadado vai para o instituto coligado para fomentar a inclusão e diversidade, denominado  **www.transprograma.com.br**
 
 ## Rotas
 
@@ -22,10 +22,12 @@ resposta servidor:
 
 ```json
 {
-    "message": "Olá !! Aqui você vai encontrar muita ajuda para quem está inciando no unverso do TI",
-    "version": 1,
+    "message": "Olá !! Aqui você vai encontrar muita ajuda e informação para conhecer o universo Dev e TI",
+    "version": 1.0,
     "autor": "Julia Mariah",
-    "site": "www.techflix.com.br"
+    "site": "www.techflix.com.br",
+    "date": 2021,
+    "descricao": "Projeto final do curso da REPROGRAMA"
 }
 ```
 
