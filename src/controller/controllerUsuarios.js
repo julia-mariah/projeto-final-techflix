@@ -10,6 +10,15 @@ const getAll = async (req, res) => {
     }
 }
 
+const getById = async(req, res) => {
+     try{ const usuariosId = await Usuarios.findById(req.params.id)
+        res.status(200).send(usuariosId)
+      }
+     catch (error){
+        res.status(500).send({message: error.message})
+     }
+    }
+
 const criarUsuario =  async (req,res) => {
      const usuario = new Usuarios ({
       nome: req.body.nome,
@@ -84,6 +93,7 @@ module.exports = {
     atualizarUsuario, 
     substituirUsuario, 
     deletaUsuario,
+    getById
 }
 
 

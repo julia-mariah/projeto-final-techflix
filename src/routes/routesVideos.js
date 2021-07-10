@@ -5,6 +5,7 @@ const router = express.Router()// aqui eu instancio o express
 // aqui vou criar as rotas 
 
 router.get("/", controller.getAll) // aqui criei a rota de pegar todos os videos usando o find
+router.get("/:id", controller.getById)// aqui pega pelo ID
 router.post("/", controller.criarVideo) //  aqui criei a rora de postar um video usando o body do postman
 router.patch("/:id", controller.atualizarVideo)//aqui estou atualizando itens do video
 router.put("/:id", controller.substituirVideo) // aqui estou substituindo im item (via put)
