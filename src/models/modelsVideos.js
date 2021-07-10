@@ -35,22 +35,22 @@ const videosSchema = new mongoose.Schema({ // passo 2 aqui criamos a engenharia 
 
     _id: mongoose.Schema.Types.ObjectId,
 
-    nivel:{
+    nivel: {
         type: String,
-        required:true
-    },
-    
-    avaliacao:{
-        type: Number,
-        required:false,
-        default:0
+        required: true
     },
 
-    duracao:{
-        type: String,
-        required:true
+    avaliacao: {
+        type: Number,
+        required: false,
+        default: 0
     },
-    
+
+    duracao: {
+        type: String,
+        required: true
+    },
+
     postadoEm: {
         type: Date,
         required: true,

@@ -6,11 +6,28 @@
 
 ## Descrição da API (RestFull-CRUD)
 
-Plataforma que agrega vídeos e oportunidades voltadas ao universo DEV, agregadas por temas, professores, influencers.
+Plataforma que agrega vídeos e oportunidades voltadas ao universo DEV e TI, agregadas por temas, professores, influencers.
 
-Poderá ser separado por free e  pago, (no caso de lives com patrocínio) e parte desse valor arrecadado vai para o instituto coligado que vai fomentar a inclusão e diversidade, denominado  **www.transprograma.com**
+Poderá ser separado por free e pago, (no caso de videos com patrocínio) e parte desse valor arrecadado vai para o instituto coligado para fomentar a inclusão e diversidade, denominado  **www.transprograma.com**
 
 ## Rotas
+
+### [GET] "/"                (Apresentação da API)
+
+**protocolo : http**
+
+**status: 200 ok**
+
+resposta servidor:
+
+```json
+{
+    "message": "Olá !! Aqui você vai encontrar muita ajuda para quem está inciando no unverso do TI",
+    "version": 1,
+    "autor": "Julia Mariah",
+    "site": "www.techflix.com.br"
+}
+```
 
 ### [GET] "/videos"                (read)
 
@@ -53,7 +70,7 @@ resposta servidor:
 ]
 ```
 
-### [GETbyID] "/videos"                (read by ID)
+### [GET] "/videos/:id"                (read by ID)
 
 **protocolo : http**
 
@@ -62,7 +79,19 @@ resposta servidor:
 resposta servidor:
 
 ```json
-
+{
+    "avaliacao": 10,
+    "postadoEm": "2021-07-08T02:55:17.833Z",
+    "_id": "60e3dbbcdae08c235c85c37f",
+    "titulo": "como ser front end",
+    "tema": "front end",
+    "descricao": "como aprender front end",
+    "acesso": "gratuito",
+    "faixaEtaria": 12,
+    "nivel": "iniciante",
+    "duracao": "01 hora e 12 minutos",
+    "link": "https://www.youtube.com/watch?v=ZY3-MFxVdEw&ab_channel=AluraCursosOnline"
+}
 ```
 
 ### [POST] "/videos/"           (create)
@@ -247,7 +276,7 @@ resposta servidor:
 ]
 ```
 
-### [GETbyID] "/usuarios"                (read by ID)
+### [GET] "/usuarios/:id"                (read by ID)
 
 **protocolo : http**
 
@@ -256,7 +285,16 @@ resposta servidor:
 resposta servidor:
 
 ```json
-
+{
+    "assinante": false,
+    "ingressouEm": "2021-07-09T21:56:45.721Z",
+    "_id": "60e8c627df13d52120712755",
+    "nome": "Julia Mariah",
+    "cpf": 11122233301,
+    "email": "juliamariah.net@gmail.com",
+    "idade": 51,
+    "__v": 0
+}
 ```
 
 ### [POST] "/usuarios/"
